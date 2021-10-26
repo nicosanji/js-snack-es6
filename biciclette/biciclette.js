@@ -51,7 +51,7 @@ function creaArrayPesi(biciclette) {
 
 // Function + Arrow Function -> ottengo l'indice dell'oggetto più leggero (weight + basso)
 function trovaIndiceLeggero(arrayPesi) {
-    // .findIndex -> "ritorna" il primo elemento dell'Array originale che "soddisfa" l'Arrow Function (=>)
+    // .findIndex -> "ritorna" il primo elemento dell'Array di pesi che "soddisfa" l'Arrow Function (=>)
     let indiceLeggero = arrayPesi.findIndex((element, index) => element === Math.min(...arrayPesi));
     // Return -> indice della bici più leggera
     return indiceLeggero;
@@ -66,3 +66,4 @@ outputBiciLeggera.innerHTML = `<h2>La bicicletta più leggera è la :<br>
                                    Il suo peso è di :<br>
                                    ${biciclette[indiceBiciLeggera].weight} Kg</h2>`;
 
+                                    
